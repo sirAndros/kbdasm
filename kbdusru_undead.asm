@@ -221,26 +221,26 @@ palign
 vk2wchar4:
     vkrow4 VK_GRAVE,      SGCAPS, "`",      "~",      "`",      "~"
     vkrow4 -1,            0,      "ё",      "Ё",      WCH_NONE, WCH_NONE
-    vkrow4 "1",           SGCAPS, "1",      "!",      "¡",      "¹"
-    vkrow4 "1",           0,      "1",      "!",      WCH_NONE, WCH_NONE
-    vkrow4 "2",           SGCAPS, "2",      "@",      "@",      "²"
-    vkrow4 "2",           0,      "2",      '"',      WCH_NONE, WCH_NONE
-    vkrow4 "3",           SGCAPS, "3",      "#",      "#",      "³"
-    vkrow4 "3",           0,      "3",      "№",      WCH_NONE, WCH_NONE
-    vkrow4 "4",           SGCAPS, "4",      "$",      "$",      "£"
-    vkrow4 "4",           0,      "4",      ";",      WCH_NONE, WCH_NONE
-    vkrow4 "5",           SGCAPS, "5",      "%",      "€",      "‰"
-    vkrow4 "5",           0,      "5",      "%",      WCH_NONE, WCH_NONE
-    vkrow4 "6",           SGCAPS, "6",      "^",      "^",      "↑"
-    vkrow4 -1,            0,      "6",      ":",      WCH_NONE, WCH_NONE
-    vkrow4 "7",           SGCAPS, "7",      "&",      "&",      "＆"
-    vkrow4 "7",           0,      "7",      "?",      WCH_NONE, WCH_NONE
-    vkrow4 "8",           SGCAPS, "8",      "*",      "∞",      "×"
-    vkrow4 "8",           0,      "8",      "*",      WCH_NONE, WCH_NONE
-    vkrow4 "9",           SGCAPS, "9",      "(",      "«",      "“"
-    vkrow4 "9",           0,      "9",      "(",      WCH_NONE, WCH_NONE
-    vkrow4 "0",           SGCAPS, "0",      ")",      "»",      "”"
-    vkrow4 "0",           0,      "0",      ")",      WCH_NONE, WCH_NONE
+    vkrow4 "1",           SGCAPS, "!",      "1",      "¡",      "¹"
+    vkrow4 "1",           0,      "!",      "1",      WCH_NONE, WCH_NONE
+    vkrow4 "2",           SGCAPS, "@",      "2",      "@",      "²"
+    vkrow4 "2",           0,      '"',      '2',      WCH_NONE, WCH_NONE
+    vkrow4 "3",           SGCAPS, "#",      "3",      "#",      "³"
+    vkrow4 "3",           0,      "№",      "3",      WCH_NONE, WCH_NONE
+    vkrow4 "4",           SGCAPS, "$",      "4",      "$",      "£"
+    vkrow4 "4",           0,      ";",      "4",      WCH_NONE, WCH_NONE
+    vkrow4 "5",           SGCAPS, "%",      "5",      "€",      "‰"
+    vkrow4 "5",           0,      "%",      "5",      WCH_NONE, WCH_NONE
+    vkrow4 "6",           SGCAPS, "^",      "6",      "^",      "↑"
+    vkrow4 -1,            0,      ":",      "6",      WCH_NONE, WCH_NONE
+    vkrow4 "7",           SGCAPS, "&",      "7",      "&",      "＆"
+    vkrow4 "7",           0,      "?",      "7",      WCH_NONE, WCH_NONE
+    vkrow4 "8",           SGCAPS, "*",      "8",      "∞",      "×"
+    vkrow4 "8",           0,      "*",      "8",      WCH_NONE, WCH_NONE
+    vkrow4 "9",           SGCAPS, "(",      "9",      "«",      "“"
+    vkrow4 "9",           0,      "(",      "9",      WCH_NONE, WCH_NONE
+    vkrow4 "0",           SGCAPS, ")",      "0",      "»",      "”"
+    vkrow4 "0",           0,      ")",      "0",      WCH_NONE, WCH_NONE
     vkrow4 VK_MINUS,      0,      "-",      "_",      "—",      "–"
     vkrow4 VK_EQUALS,     0,      "=",      "+",      "≠",      "±"
     vkrow4 "Q",           SGCAPS, "q",      "Q",      WCH_DEAD, WCH_DEAD
