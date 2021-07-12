@@ -565,7 +565,12 @@ deadkeys:
     du "sSẞ", 0, "ssß", 0, "SSẞ", 0
     du "tEÐ", 0, "teð", 0, "TEÐ", 0
     du "umµ", 0
-    du "mOΩ", 0, "moω", 0, "MOΩ", 0
+    du "mOΩ", 0, "moω", 0, "MOΩ", 0, "MoΩ", 0
+    du "lAΑ", 0, "laα", 0, "LAΑ", 0, "LaΑ", 0
+    du "eBΒ", 0, "ebβ", 0, "EBΒ", 0, "EbΒ", 0
+    du "eDΔ", 0, "edδ", 0, "EDΔ", 0, "EdΔ", 0
+    du "iSΣ", 0, "isς", 0, "ISΣ", 0, "IsΣ", 0
+    du "iFΦ", 0, "ifφ", 0, "IFΦ", 0, "IfΦ", 0
     du "op£", 0
     du "ec¢", 0
     du "ey¥", 0
