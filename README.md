@@ -33,4 +33,5 @@ If somebody wants to check out my approach - there are PowerShell scripts to set
 4. Add "EN+RU" to English language. _(In opened window in "Preferred languages" select "English"->Options->Add a keyboard")_
 5. Remove previously used keyboard.
 6. Add "RU+EN" to Russian language and remove previously used keyboard.
-7. Sign Out and then Sign In or just reboot.
+7. _Optionally:_ place shortcut to `.\utils\turn-caps-off-on-win-switch.ahk` to your `shell:startup` folder
+8. _Sign Out_ and then _Sign In_ or just _reboot_ your PC.
