@@ -35,5 +35,5 @@ if (Test-Path "$regpath\$idEng") {
     Register-Layout $idEng -id "00d!" -text "EN+RU" -file "kbdusru_undead.dll" -dispName "US Undead"
 }
 
-Copy-Item "kbdruen_undead.dll" C:\Windows\System32\ -Force
-Copy-Item "kbdusru_undead.dll" C:\Windows\System32\ -Force
+Copy-Item "..\layouts\kbdruen_undead.dll" C:\Windows\System32\ -Force
+Copy-Item "..\layouts\kbdusru_undead.dll" C:\Windows\System32\ -Force

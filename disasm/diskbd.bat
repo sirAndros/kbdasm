@@ -5,7 +5,7 @@
 ;if "%input%"=="" goto:usage
 ;set frombat=nul.
 ;set include=%~pd0fasm\include
-;"%~pd0fasm\fasm.exe" "%~df0" %~n1_source.asm
+;"%~pd0..\fasm\fasm.exe" "%~df0" %~n1_source.asm
 ;goto:eof
 ;:usage
 ;echo Usage: diskbd.bat ^<kbdfile.dll^> - produce kbdfile_source.asm

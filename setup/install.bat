@@ -4,7 +4,7 @@ set target=%1
 set dest=%~nx1
 
 if "%target%"=="" (
-  set target=kbdusru_undead.dll
+  set target=..\layouts\kbdusru_undead.dll
   set dest=kbdusru_undead.dll
   set lid=00d0
   set id=07430419

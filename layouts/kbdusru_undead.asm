@@ -3,7 +3,7 @@
 ; kbdusru_undead - US/RU hybrid keyboard layout with Caps Lock set to switch
 ;                  languages and "undead keys" for additional symbols
 
-include "detect_%arch%.inc"
+include "includes/detect_%arch%.inc"
 
 if SYSTEM_64BIT
   format PE64 DLL native 5.0 at 5ffffff0000h on "nul" as "dll" ; Build for 64-bit Windows
@@ -13,7 +13,7 @@ end if
 
 MAKE_DLL equ 1
 
-include "base.inc"
+include "includes/base.inc"
 
 WOW64 = 0 ; Use when assembling for 32-bit subsystem for 64-bit OS (Is this ever needed?)
 USE_LIGATURES = 1 ; There is a bug in Firefox, if ligatures contain more than
