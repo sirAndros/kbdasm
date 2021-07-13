@@ -114,7 +114,7 @@ if used ligatures
 ligatures: .:
     dw VK_SLASH ; VKey
     dw 3   ; Modifiers; Shift + AltGr; basically is the column number in vk2wchar* tables that contains WCH_LGTR
-    du "/me " ; If less than max characters are used, the rest must be filled with WCH_NONE
+    du "\r\n" ; If less than max characters are used, the rest must be filled with WCH_NONE
 ligature_size = $ - .
 if DEBUG
     dw VK_CLEAR ; VKey
@@ -431,10 +431,33 @@ deadkeys:
     du "'WẂ", 0, "'wẃ", 0
     du "'YÝ", 0, "'yý", 0
     du "'ZŹ", 0, "'zź", 0
+    du "эAÁ", 0, "эaá", 0
+    du "эÆǼ", 0, "эæǽ", 0
+    du "эCĆ", 0, "эcć", 0
+    du "эEÉ", 0, "эeé", 0
+    du "эGǴ", 0, "эgǵ", 0
+    du "эIÍ", 0, "эií", 0
+    du "эKḰ", 0, "эkḱ", 0
+    du "эLĹ", 0, "эlĺ", 0
+    du "эMḾ", 0, "эmḿ", 0
+    du "эNŃ", 0, "эnń", 0
+    du "эOÓ", 0, "эoó", 0
+    du "эØǾ", 0, "эøǿ", 0
+    du "эPṔ", 0, "эpṕ", 0
+    du "эRŔ", 0, "эrŕ", 0
+    du "эSŚ", 0, "эsś", 0
+    du "эUÚ", 0, "эuú", 0
+    du "эWẂ", 0, "эwẃ", 0
+    du "эYÝ", 0, "эyý", 0
+    du "эZŹ", 0, "эzź", 0
     du '"OŐ', 0, '"oő', 0
     du '"UŰ', 0, '"uű', 0
+    du 'ЭOŐ', 0, 'Эoő', 0
+    du 'ЭUŰ', 0, 'Эuű', 0
     du "oAÅ", 0, "oaå", 0
     du "oUŮ", 0, "ouů", 0
+    du "щAÅ", 0, "щaå", 0
+    du "щUŮ", 0, "щuů", 0
     du ".AȦ", 0, ".aȧ", 0
     du ".BḂ", 0, ".bḃ", 0
     du ".CĊ", 0, ".cċ", 0
@@ -457,6 +480,7 @@ deadkeys:
     du ".ZŻ", 0, ".zż", 0
     du ':AÄ', 0, ':aä', 0
     du ':EË', 0, ':eë', 0
+    du ':ЕЁ', 0, ':её', 0 ; rus
     du ':HḦ', 0, ':hḧ', 0
     du ':IÏ', 0, ':iï', 0
     du ':OÖ', 0, ':oö', 0
@@ -493,6 +517,22 @@ deadkeys:
     du "vTŤ", 0, "vtť", 0
     du "vUǓ", 0, "vuǔ", 0
     du "vZŽ", 0, "vzž", 0
+    du "мAǍ", 0, "мaǎ", 0
+    du "мCČ", 0, "мcč", 0
+    du "мDĎ", 0, "мdď", 0
+    du "мEĚ", 0, "мeě", 0
+    du "мGǦ", 0, "мgǧ", 0
+    du "мHȞ", 0, "мhȟ", 0
+    du "мIǏ", 0, "мiǐ", 0
+    du "мKǨ", 0, "мkǩ", 0
+    du "мLĽ", 0, "мlľ", 0
+    du "мNŇ", 0, "мnň", 0
+    du "мOǑ", 0, "мoǒ", 0
+    du "мRŘ", 0, "мrř", 0
+    du "мSŠ", 0, "мsš", 0
+    du "мTŤ", 0, "мtť", 0
+    du "мUǓ", 0, "мuǔ", 0
+    du "мZŽ", 0, "мzž", 0
     du "uAĂ", 0, "uaă", 0
     du "uEĔ", 0, "ueĕ", 0
     du "uGĞ", 0, "ugğ", 0
@@ -545,6 +585,8 @@ deadkeys:
     du "/KꝀ", 0, "/kꝁ", 0
     du "/LŁ", 0, "/lł", 0
     du "/OØ", 1, "/oø", 1, " ØØ", 0, " øø", 0
+    du "\OØ", 0, "\oø", 0
+    du "\ЩØ", 0, "\щø", 0
     du "/PⱣ", 0, "/pᵽ", 0
     du "/RɌ", 0, "/rɍ", 0
     du "/TŦ", 0, "/tŧ", 0
@@ -603,20 +645,32 @@ deadkeys:
     du "0oಠ", 0
 
     du "`q̀", 0 ; combining grave
+    du "ёq̀", 0 ; combining grave (RU layout)
     du "'q́", 0 ; combining acute
     du "эq́", 0 ; combining acute (RU layout)
     du "^q̂", 0 ; combining circumflex
+    du "6q̂", 0 ; combining circumflex (RU layout)
     du "~q̃", 0 ; combining tilde
+    du "Ёq̃", 0 ; combining tilde (RU layout)
     du "mq̄", 0 ; combining macron
+    du "ьq̄", 0 ; combining macron (RU layout)
     du "uq̆", 0 ; combining breve
+    du "гq̆", 0 ; combining breve (RU layout)
     du ".q̇", 0 ; combining dot above
+    du "юq̇", 0 ; combining dot above (RU layout)
     du ":q̈", 0 ; combining diaeresis
+    du "жq̈", 0 ; combining diaeresis (RU layout)
     du "oq̊", 0 ; combining ring
+    du "щq̊", 0 ; combining ring (RU layout)
     du '"q̋', 0 ; combining double acute
+    du 'Эq̋', 0 ; combining double acute (RU layout)
     du "vq̌", 0 ; combining caron
+    du "мq̌", 0 ; combining caron (RU layout)
     du ",q̧", 0 ; combining cedilla
+    du "бq̧", 0 ; combining cedilla (RU layout)
     du "-q̶", 0 ; combining long stroke overlay
     du "/q̸", 0 ; combining solidus
+    du "\q̸", 0 ; combining solidus
 
     du "2f½", 0
     du "3f⅓", 0
@@ -665,8 +719,8 @@ section '.rsrc' data readable resource
 directory RT_VERSION,versions
 resource versions,1,LANG_NEUTRAL,version
 versioninfo version,VOS_NT_WINDOWS32,VFT_DLL,VFT2_DRV_KEYBOARD,0,1200,\
-    'CompanyName','by Grom PE',\
-    'FileDescription','US+RU+Extra Customized Keyboard Layout',\
+    'CompanyName','by Grom PE. Adopted sir_Andros',\
+    'FileDescription','US+RU Customized Keyboard Layout',\
     'FileVersion','1.0',\
     'InternalName','kbdusru_undead',\
     'LegalCopyright','Public domain. No rights reserved.',\
