@@ -32,7 +32,7 @@ if (Test-Path "$regpath\$idRus") {
 if (Test-Path "$regpath\$idEng") {
     Write-Verbose "English keyboard layout is already registered"
 } else {
-    Register-Layout $idEng -id "00d!" -text "EN+RU" -file "kbdusru_undead.dll" -dispName "US Undead"
+    Register-Layout $idEng -id "00d1" -text "EN+RU" -file "kbdusru_undead.dll" -dispName "US Undead"
 }
 
 Copy-Item "..\layouts\kbdruen_undead.dll" C:\Windows\System32\ -Force
