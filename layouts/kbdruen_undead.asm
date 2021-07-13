@@ -11,6 +11,9 @@ else
   format PE DLL native 5.0 at 5fff0000h on "nul" as "dll" ; Build for 32-bit Windows or WOW64
 end if
 
+TYPEWRITER = 1 ; Set to 1 to swap 1234567890 and !@#$%^&*() when CapsLock is OFF
+TYPEWRITER_ON_CAPS = 0 ; Set to 1 to swap 1234567890 and !@#$%^&*() when CapsLock is ON
+
 MAKE_DLL equ 1
 
 include "includes/base.inc"
@@ -221,26 +224,106 @@ palign
 vk2wchar4:
     vkrow4 VK_GRAVE,      SGCAPS, "ё",      "Ё",      "`",      "~"
     vkrow4 -1,            0,      "`",      "~",      WCH_NONE, WCH_NONE
+if TYPEWRITER
     vkrow4 "1",           SGCAPS, "!",      "1",      "¡",      "¹"
+else
+    vkrow4 "1",           SGCAPS, "1",      "!",      "¡",      "¹"
+end if
+if TYPEWRITER_ON_CAPS
     vkrow4 "1",           0,      "!",      "1",      WCH_NONE, WCH_NONE
+else
+    vkrow4 "1",           0,      "1",      "!",      WCH_NONE, WCH_NONE
+end if
+if TYPEWRITER
     vkrow4 "2",           SGCAPS, '"',      "2",      "@",      "²"
+else
+    vkrow4 "2",           SGCAPS, "2",      '"',      "@",      "²"
+end if
+if TYPEWRITER_ON_CAPS
     vkrow4 "2",           0,      '@',      "2",      WCH_NONE, WCH_NONE
+else
+    vkrow4 "2",           0,      "2",      "@",      WCH_NONE, WCH_NONE
+end if
+if TYPEWRITER
     vkrow4 "3",           SGCAPS, "№",      "3",      "#",      "³"
+else
+    vkrow4 "3",           SGCAPS, "3",      "№",      "#",      "³"
+end if
+if TYPEWRITER_ON_CAPS
     vkrow4 "3",           0,      "#",      "3",      WCH_NONE, WCH_NONE
+else
+    vkrow4 "3",           0,      "3",      "#",      WCH_NONE, WCH_NONE
+end if
+if TYPEWRITER
     vkrow4 "4",           SGCAPS, ";",      "4",      "$",      "£"
+else
+    vkrow4 "4",           SGCAPS, "4",      ";",      "$",      "£"
+end if
+if TYPEWRITER_ON_CAPS
     vkrow4 "4",           0,      "$",      "4",      WCH_NONE, WCH_NONE
+else
+    vkrow4 "4",           0,      "4",      "$",      WCH_NONE, WCH_NONE
+end if
+if TYPEWRITER
     vkrow4 "5",           SGCAPS, "%",      "5",      "€",      "‰"
+else
+    vkrow4 "5",           SGCAPS, "5",      "%",      "€",      "‰"
+end if
+if TYPEWRITER_ON_CAPS
     vkrow4 "5",           0,      "%",      "5",      WCH_NONE, WCH_NONE
+else
+    vkrow4 "5",           0,      "5",      "%",      WCH_NONE, WCH_NONE
+end if
+if TYPEWRITER
     vkrow4 "6",           SGCAPS, ":",      "6",      "^",      "↑"
+else
+    vkrow4 "6",           SGCAPS, "6",      ":",      "^",      "↑"
+end if
+if TYPEWRITER_ON_CAPS
     vkrow4 -1,            0,      "^",      "6",      WCH_NONE, WCH_NONE
+else
+    vkrow4 -1,            0,      "6",      "^",      WCH_NONE, WCH_NONE
+end if
+if TYPEWRITER
     vkrow4 "7",           SGCAPS, "?",      "7",      "&",      "＆"
+else
+    vkrow4 "7",           SGCAPS, "7",      "?",      "&",      "＆"
+end if
+if TYPEWRITER_ON_CAPS
     vkrow4 "7",           0,      "&",      "7",      WCH_NONE, WCH_NONE
+else
+    vkrow4 "7",           0,      "7",      "&",      WCH_NONE, WCH_NONE
+end if
+if TYPEWRITER
     vkrow4 "8",           SGCAPS, "*",      "8",      "∞",      "×"
+else
+    vkrow4 "8",           SGCAPS, "8",      "*",      "∞",      "×"
+end if
+if TYPEWRITER_ON_CAPS
     vkrow4 "8",           0,      "*",      "8",      WCH_NONE, WCH_NONE
+else
+    vkrow4 "8",           0,      "8",      "*",      WCH_NONE, WCH_NONE
+end if
+if TYPEWRITER
     vkrow4 "9",           SGCAPS, "(",      "9",      "«",      "“"
+else
+    vkrow4 "9",           SGCAPS, "9",      "(",      "«",      "“"
+end if
+if TYPEWRITER_ON_CAPS
     vkrow4 "9",           0,      "(",      "9",      WCH_NONE, WCH_NONE
+else
+    vkrow4 "9",           0,      "9",      "(",      WCH_NONE, WCH_NONE
+end if
+if TYPEWRITER
     vkrow4 "0",           SGCAPS, ")",      "0",      "»",      "”"
+else
+    vkrow4 "0",           SGCAPS, "0",      ")",      "»",      "”"
+end if
+if TYPEWRITER_ON_CAPS
     vkrow4 "0",           0,      ")",      "0",      WCH_NONE, WCH_NONE
+else
+    vkrow4 "0",           0,      "0",      ")",      WCH_NONE, WCH_NONE
+end if
     vkrow4 VK_MINUS,      0,      "-",      "_",      "—",      "–"
     vkrow4 VK_EQUALS,     0,      "=",      "+",      "≠",      "±"
     vkrow4 "Q",           SGCAPS, "й",      "Й",      WCH_DEAD, WCH_DEAD
