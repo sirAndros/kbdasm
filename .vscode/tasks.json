@@ -8,6 +8,7 @@
             "type": "shell",
             "command": ".\\make.bat",
             "problemMatcher": [],
+            "args": ["${file}"],
             "group": {
                 "kind": "build",
                 "isDefault": true
