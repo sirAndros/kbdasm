@@ -10,8 +10,8 @@ My vision
 
 Idea of "UNDEAD" keys looks good to me, so I use original [kbdusru_undead](https://github.com/grompe/kbdasm/blob/master/kbdusru_undead.asm) with following modification:
 
-1. Swap digits and symbols (see [Notes]);
-2. Add ability to use dead-keys on `AltGr` layout in RU mode (CAPS ON);
+1. Swap digits and symbols (see [notes section](#notes));
+2. Add ability to use some dead-keys on `AltGr` layout in RU mode (CAPS ON);
 3. Install as US keyboard, as default layout is US.
 
 Than I use very same layout as RU keyboard with RUS keys as default (_EN_ when `CapsLock ON`).
@@ -42,4 +42,4 @@ Notes
 I use "typewriter"-like (digits and symbols are swapped) layouts when CapsLock is OFF but prefer to have digits on alternative (caps) layout.
 You can easily change both with `TYPEWRITER` and `TYPEWRITER_ON_CAPS` flags in [kbdruen_undead.asm](https://github.com/sirAndros/kbdasm/blob/master/layouts/kbdruen_undead.asm) and [kbdusru_undead.asm](https://github.com/sirAndros/kbdasm/blob/master/layouts/kbdusru_undead.asm).
 
-To determine what you use offen I recomend to use some keylogger for a week. For my-self I wrote own very-very basic bycicle: [simple-keypress-statistics](https://github.com/sirAndros/simple-keypress-statistics).
+To determine what you use offen I recomend to use some keylogger for a week. For my-self I wrote own very basic bycicle: [simple-keypress-statistics](https://github.com/sirAndros/simple-keypress-statistics).
