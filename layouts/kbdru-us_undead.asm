@@ -245,9 +245,9 @@ else
     vkrow4 "2",           0,      "2",      "@",      WCH_NONE, WCH_NONE
 end if
 if TYPEWRITER
-    vkrow4 "3",           SGCAPS, "№",      "3",      "#",      "³"
+    vkrow4 "3",           SGCAPS, "#",      "3",      "№",      "³"
 else
-    vkrow4 "3",           SGCAPS, "3",      "№",      "#",      "³"
+    vkrow4 "3",           SGCAPS, "3",      "#",      "№",      "³"
 end if
 if TYPEWRITER_ON_CAPS
     vkrow4 "3",           0,      "#",      "3",      WCH_NONE, WCH_NONE
