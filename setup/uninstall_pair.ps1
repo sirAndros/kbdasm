@@ -17,9 +17,9 @@ if (Test-Path "$regpath\$idEng") {
     Write-Verbose "'$regpath\$idEng' does not exists"
 }
 
-if (Test-Path C:\Windows\System32\kbdruen_undead.dll) {
-    Remove-Item C:\Windows\System32\kbdruen_undead.dll -Force
+if (Test-Path C:\Windows\System32\kbdru-us_undead.dll) {
+    Remove-Item C:\Windows\System32\kbdru-us_undead.dll -Force
 }
-if (Test-Path C:\Windows\System32\kbdusru_undead.dll) {
-    Remove-Item C:\Windows\System32\kbdusru_undead.dll -Force
+if (Test-Path C:\Windows\System32\kbdus-ru_undead.dll) {
+    Remove-Item C:\Windows\System32\kbdus-ru_undead.dll -Force
 }

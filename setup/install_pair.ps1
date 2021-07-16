@@ -26,14 +26,14 @@ function Register-Layout ([string]$name, [string]$id, [string]$text, [string]$fi
 if (Test-Path "$regpath\$idRus") {
     Write-Verbose "Russian keyboard layout is already registered"
 } else {
-    Register-Layout $idRus -id "00d0" -text "RU+EN" -file "kbdruen_undead.dll" -dispName "RUS Undead"
+    Register-Layout $idRus -id "00d0" -text "RU+US" -file "kbdru-us_undead.dll" -dispName "RUS Undead"
 }
 
 if (Test-Path "$regpath\$idEng") {
     Write-Verbose "English keyboard layout is already registered"
 } else {
-    Register-Layout $idEng -id "00d1" -text "EN+RU" -file "kbdusru_undead.dll" -dispName "US Undead"
+    Register-Layout $idEng -id "00d1" -text "US+RU" -file "kbdus-ru_undead.dll" -dispName "US Undead"
 }
 
-Copy-Item "$PSScriptRoot\..\layouts\kbdruen_undead.dll" C:\Windows\System32\ -Force
-Copy-Item "$PSScriptRoot\..\layouts\kbdusru_undead.dll" C:\Windows\System32\ -Force
+Copy-Item "$PSScriptRoot\..\layouts\kbdru-us_undead.dll" C:\Windows\System32\ -Force
+Copy-Item "$PSScriptRoot\..\layouts\kbdus-ru_undead.dll" C:\Windows\System32\ -Force

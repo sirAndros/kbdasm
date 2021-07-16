@@ -1,6 +1,6 @@
 ﻿="utf8"
 ; kbdasm by Grom PE. Public domain.
-; kbdruen_undead - RU/US hybrid keyboard layout with Caps Lock set to switch
+; kbdru-us_undead - RU/US hybrid keyboard layout with Caps Lock set to switch
 ;                  languages and "undead keys" for additional symbols
 
 include "includes/detect_%arch%.inc"
@@ -788,7 +788,7 @@ deadkeys:
 palign
 
 data export
-export "kbdruen_undead.dll", KbdLayerDescriptor, "KbdLayerDescriptor"
+export "kbdru-us_undead.dll", KbdLayerDescriptor, "KbdLayerDescriptor"
 end data
 
 palign
@@ -811,12 +811,12 @@ section '.rsrc' data readable resource
 directory RT_VERSION,versions
 resource versions,1,LANG_NEUTRAL,version
 versioninfo version,VOS_NT_WINDOWS32,VFT_DLL,VFT2_DRV_KEYBOARD,0,1200,\
-    'CompanyName','by Grom PE. Adopted sir_Andros',\
-    'FileDescription','RU+EN Customized Keyboard Layout',\
+    'CompanyName','by Grom PE. Adopted by sir_Andros',\
+    'FileDescription','RU+US Customized Keyboard Layout',\
     'FileVersion','1.0',\
-    'InternalName','kbdruen_undead',\
+    'InternalName','kbdru-us_undead',\
     'LegalCopyright','Public domain. No rights reserved.',\
-    'OriginalFilename','kbdruen_undead.dll',\
+    'OriginalFilename','kbdru-us_undead.dll',\
     'ProductName','kbdasm',\
     'ProductVersion','1.0'
 
