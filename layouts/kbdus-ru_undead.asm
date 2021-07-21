@@ -13,6 +13,7 @@ end if
 
 TYPEWRITER = 1 ; Set to 1 to swap 1234567890 and !@#$%^&*() when CapsLock is OFF
 TYPEWRITER_ON_CAPS = 0 ; Set to 1 to swap 1234567890 and !@#$%^&*() when CapsLock is ON
+PROGRAMMER = 1 ; Swap "-" with "_" and "[","]" with "{","}"
 
 MAKE_DLL equ 1
 
@@ -324,7 +325,11 @@ if TYPEWRITER_ON_CAPS
 else
     vkrow4 "0",           0,      "0",      ")",      WCH_NONE, WCH_NONE
 end if
+if PROGRAMMER
+    vkrow4 VK_MINUS,      0,      "_",      "-",      "—",      "–"
+else
     vkrow4 VK_MINUS,      0,      "-",      "_",      "—",      "–"
+end if
     vkrow4 VK_EQUALS,     0,      "=",      "+",      "≠",      "±"
     vkrow4 "Q",           SGCAPS, "q",      "Q",      WCH_DEAD, WCH_DEAD
     vkrow4 "Q",           0,      "й",      "Й",      "q",      "Q"
@@ -393,10 +398,20 @@ end if
 palign
 
 vk2wchar5:
+if PROGRAMMER
+    vkrow5 VK_LBRACKET,  SGCAPS, "{", "[", "[",      "{",      01Bh
+else
     vkrow5 VK_LBRACKET,  SGCAPS, "[", "{", "[",      "{",      01Bh
+end if
     vkrow5 VK_LBRACKET,  0,      "х", "Х", WCH_NONE, WCH_NONE, WCH_NONE
+
+if PROGRAMMER
+    vkrow5 VK_RBRACKET,  SGCAPS, "}", "]", "]",      "}",      01Dh
+else
     vkrow5 VK_RBRACKET,  SGCAPS, "]", "}", "]",      "}",      01Dh
+end if
     vkrow5 VK_RBRACKET,  0,      "ъ", "Ъ", WCH_NONE, WCH_NONE, WCH_NONE
+ 
     vkrow5 VK_BACKSLASH, SGCAPS, "\", "|", "|",      "¬",      01Ch
     vkrow5 VK_BACKSLASH, 0,      "\", "/", WCH_NONE, WCH_NONE, WCH_NONE
     vkrow5 VK_OEM_102,   0,      "\", "|", WCH_NONE, WCH_NONE, 01Ch
