@@ -1,0 +1,1 @@
+C:/Users/andro/OneDrive/Scripts/AHK/switch-layout-for-selected-text.ahk
