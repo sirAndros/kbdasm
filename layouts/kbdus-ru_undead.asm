@@ -13,7 +13,8 @@ end if
 
 TYPEWRITER = 1 ; Set to 1 to swap 1234567890 and !@#$%^&*() when CapsLock is OFF
 TYPEWRITER_ON_CAPS = 0 ; Set to 1 to swap 1234567890 and !@#$%^&*() when CapsLock is ON
-PROGRAMMER = 1 ; Swap "-" with "_" and "[","]" with "{","}"
+PROGRAMMER = 1 ; Swap "[","]" with "{","}"
+UDERSCORE_PRIORITY = 1 ; Swap "-" with "_"
 
 MAKE_DLL equ 1
 
@@ -325,7 +326,7 @@ if TYPEWRITER_ON_CAPS
 else
     vkrow4 "0",           0,      "0",      ")",      WCH_NONE, WCH_NONE
 end if
-if PROGRAMMER
+if UDERSCORE_PRIORITY
     vkrow4 VK_MINUS,      SGCAPS, "_",      "-",      "–",      "—"
 else
     vkrow4 VK_MINUS,      SGCAPS, "-",      "_",      "–",      "—"
