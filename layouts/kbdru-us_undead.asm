@@ -324,7 +324,7 @@ if TYPEWRITER_ON_CAPS
 else
     vkrow4 "0",           0,      "0",      ")",      WCH_NONE, WCH_NONE
 end if
-    vkrow4 VK_MINUS,      0,      "-",      "_",      "—",      "–"
+    vkrow4 VK_MINUS,      0,      "-",      "_",      "–",      "—"
     vkrow4 VK_EQUALS,     0,      "=",      "+",      "≠",      "±"
     vkrow4 "Q",           SGCAPS, "й",      "Й",      WCH_DEAD, WCH_DEAD
     vkrow4 "Q",           0,      "q",      "Q",      "й",      "Й"

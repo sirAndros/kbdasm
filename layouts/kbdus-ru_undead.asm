@@ -326,11 +326,11 @@ else
     vkrow4 "0",           0,      "0",      ")",      WCH_NONE, WCH_NONE
 end if
 if PROGRAMMER
-    vkrow4 VK_MINUS,      SGCAPS, "_",      "-",      "—",      "–"
+    vkrow4 VK_MINUS,      SGCAPS, "_",      "-",      "–",      "—"
 else
-    vkrow4 VK_MINUS,      SGCAPS, "-",      "_",      "—",      "–"
+    vkrow4 VK_MINUS,      SGCAPS, "-",      "_",      "–",      "—"
 end if
-    vkrow4 VK_MINUS,      0,      "-",      "_",      "—",      "–"
+    vkrow4 VK_MINUS,      0,      "-",      "_",      "–",      "—"
     vkrow4 VK_EQUALS,     0,      "=",      "+",      "≠",      "±"
     vkrow4 "Q",           SGCAPS, "q",      "Q",      WCH_DEAD, WCH_DEAD
     vkrow4 "Q",           0,      "й",      "Й",      "q",      "Q"
