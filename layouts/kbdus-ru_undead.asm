@@ -512,6 +512,32 @@ scancode2vk: .:
 palign
 
 deadkeys:
+    du "AAA", 0, "aaa", 0, "ФAA", 0, "фaa", 0
+    du "BBB", 0, "bbb", 0, "ИBB", 0, "иbb", 0
+    du "CCC", 0, "ccc", 0, "СCC", 0, "сcc", 0
+    du "DDD", 0, "ddd", 0, "ВDD", 0, "вdd", 0
+    du "EEE", 0, "eee", 0, "УEE", 0, "уee", 0
+    du "FFF", 0, "fff", 0, "АFF", 0, "аff", 0
+    du "GGG", 0, "ggg", 0, "ПGG", 0, "пgg", 0
+    du "HHH", 0, "hhh", 0, "РHH", 0, "рhh", 0
+    du "III", 0, "iii", 0, "ШII", 0, "шii", 0
+    du "JJJ", 0, "jjj", 0, "ОJJ", 0, "оjj", 0
+    du "KKK", 0, "kkk", 0, "ЛKK", 0, "лkk", 0
+    du "LLL", 0, "lll", 0, "ДLL", 0, "дll", 0
+    du "MMM", 0, "mmm", 0, "ЬMM", 0, "ьmm", 0
+    du "NNN", 0, "nnn", 0, "ТNN", 0, "тnn", 0
+    du "OOO", 0, "ooo", 0, "ЩOO", 0, "щoo", 0
+    du "PPP", 0, "ppp", 0, "ЗPP", 0, "зpp", 0
+    du "QQQ", 0, "qqq", 0, "ЙQQ", 0, "йqq", 0
+    du "RRR", 0, "rrr", 0, "КRR", 0, "кrr", 0
+    du "SSS", 0, "sss", 0, "ЫSS", 0, "ыss", 0
+    du "TTT", 0, "ttt", 0, "ЕTT", 0, "еtt", 0
+    du "UUU", 0, "uuu", 0, "ГUU", 0, "гuu", 0
+    du "VVV", 0, "vvv", 0, "МVV", 0, "мvv", 0
+    du "WWW", 0, "www", 0, "ЦWW", 0, "цww", 0
+    du "XXX", 0, "xxx", 0, "ЧXX", 0, "чxx", 0
+    du "YYY", 0, "yyy", 0, "НYY", 0, "нyy", 0
+    du "ZZZ", 0, "zzz", 0, "ЯZZ", 0, "яzz", 0
     du "'AÁ", 0, "'aá", 0
     du "'ÆǼ", 0, "'æǽ", 0
     du "'CĆ", 0, "'cć", 0
@@ -799,7 +825,7 @@ deadkeys:
     du "vb↓", 0
 	du "*b✱", 0
 
-    du "bb", 20BFh, 0 ; Bitcoin sign
+    du "cb", 20BFh, 0 ; Bitcoin sign
 
     dw 4 dup 0
 
