@@ -710,6 +710,9 @@ deadkeys:
     du "mYȲ", 0, "myȳ", 0
     du "eAÆ", 1, "eaæ", 1, "EAÆ", 1, " ÆÆ", 0, " ææ", 0
     du "eOŒ", 0, "eoœ", 0, "EOŒ", 0
+    du "siᵢ", 0, "_iᵢ", 0
+    du "sjⱼ", 0, "_jⱼ", 0
+    du "snⁿ", 0, "^nⁿ", 0
     du "oc©", 0
     du "or®", 0
     du "mt™", 0
@@ -735,6 +738,7 @@ deadkeys:
     du "ni∫", 0
     du "ufƒ", 0
     du "oo•", 0
+    du "rg°", 0
     du "es§", 0
 	du "ap¶", 0
     du "ipπ", 0
@@ -752,6 +756,8 @@ deadkeys:
     du "aw⚠", 0
     du "eh♥", 0
 	du "ts★", 0
+	du "am♂", 0
+	du "ef♀", 0
     du "mm¯", 0
     du "0oಠ", 0
     du "cb", 20BFh, 0 ; Bitcoin sign
@@ -783,6 +789,8 @@ deadkeys:
     du "-q̶", 0 ; combining long stroke overlay
     du "/q̸", 0 ; combining solidus
     du "\q̸", 0 ; combining solidus
+    du "*q⃰", 0 ; combining asterix
+    du "*q⃰", 0 ; combining asterix
 
     du "2f½", 0
     du "3f⅓", 0
