@@ -222,7 +222,7 @@ vk2wchar2:
 palign
 
 vk2wchar4:
-    vkrow4 VK_GRAVE,      SGCAPS, "ё",      "Ё",      "`",      "~"
+    vkrow4 VK_GRAVE,      SGCAPS, "ё",      "Ё",      "`",      "≈"
     vkrow4 -1,            0,      "`",      "~",      WCH_NONE, WCH_NONE
 if TYPEWRITER
     vkrow4 "1",           SGCAPS, "!",      "1",      "¡",      "¹"
@@ -382,9 +382,9 @@ end if
     vkrow4 "N",           0,      "n",      "N",      "т",      "Т"
     vkrow4 "M",           SGCAPS, "ь",      "Ь",      WCH_DEAD, WCH_DEAD
     vkrow4 "M",           0,      "m",      "M",      "ь",      "Ь"
-    vkrow4 VK_COMMA,      SGCAPS, "б",      "Б",      "<",      "←"
+    vkrow4 VK_COMMA,      SGCAPS, "б",      "Б",      "<",      "≤"
     vkrow4 -1,            0,      ",",      "<",      WCH_NONE, WCH_NONE
-    vkrow4 VK_PERIOD,     SGCAPS, "ю",      "Ю",      ">",      "→"
+    vkrow4 VK_PERIOD,     SGCAPS, "ю",      "Ю",      ">",      "≥"
     vkrow4 -1,            0,      ".",      ">",      WCH_NONE, WCH_NONE
     vkrow4 VK_SLASH,      SGCAPS, ".",      ",",      "¿",      WCH_LGTR
     vkrow4 VK_SLASH,      0,      "/",      "?",      WCH_NONE, WCH_NONE
@@ -735,6 +735,7 @@ deadkeys:
     du "ус¢", 0
     du "ун¥", 0
     du "уу€", 0
+    du "$у€", 0
     du "гк₽", 0
     du "шаﬁ", 0
     du "ааﬀ", 0
@@ -802,10 +803,18 @@ deadkeys:
 
     du "аи█", 0, "Аи▓", 0, "АИ▓", 0
     du "пи░", 0, "Пи▒", 0, "ПИ▒", 0
-    du "ри▀", 0, "Ри▌", 0, "РИ▌", 0
+    du "ви▀", 0, "Ви▌", 0, "ВИ▌", 0
     du "ои▄", 0, "Ои▐", 0, "ОИ▐", 0
-    du "ми↓", 0
 	du "*и✱", 0
+
+    du "ми│", 0, "ри─", 0, "Ми┴", 0, "Ри┬", 0
+    du "ди┘", 0, "ки└", 0, "Ди┤", 0, "Ки├", 0
+    du "мИ║", 0, "рИ═", 0, "МИ╩", 0, "РИ╦", 0
+    du "дИ╝", 0, "кИ╚", 0, "ДИ╣", 0, "КИ╠", 0
+    du "чи┼", 0, "чИ╬", 0
+
+    du "Бф←", 0, "Юф→", 0
+    du "-ф↓", 0, "+ф↑", 0
 
     du "си", 20BFh, 0 ; Bitcoin sign
 

@@ -224,7 +224,7 @@ vk2wchar2:
 palign
 
 vk2wchar4:
-    vkrow4 VK_GRAVE,      SGCAPS, "`",      "~",      "`",      "~"
+    vkrow4 VK_GRAVE,      SGCAPS, "`",      "~",      "`",      "≈"
     vkrow4 -1,            0,      "ё",      "Ё",      WCH_NONE, WCH_NONE
 if TYPEWRITER
     vkrow4 "1",           SGCAPS, "!",      "1",      "¡",      "¹"
@@ -389,9 +389,9 @@ end if
     vkrow4 "N",           0,      "т",      "Т",      "n",      "N"
     vkrow4 "M",           SGCAPS, "m",      "M",      WCH_DEAD, WCH_DEAD
     vkrow4 "M",           0,      "ь",      "Ь",      "m",      "M"
-    vkrow4 VK_COMMA,      SGCAPS, ",",      "<",      "<",      "←"
+    vkrow4 VK_COMMA,      SGCAPS, ",",      "<",      "<",      "≤"
     vkrow4 -1,            0,      "б",      "Б",      WCH_NONE, WCH_NONE
-    vkrow4 VK_PERIOD,     SGCAPS, ".",      ">",      ">",      "→"
+    vkrow4 VK_PERIOD,     SGCAPS, ".",      ">",      ">",      "≥"
     vkrow4 -1,            0,      "ю",      "Ю",      WCH_NONE, WCH_NONE
     vkrow4 VK_SLASH,      SGCAPS, "/",      "?",      "¿",      WCH_LGTR
     vkrow4 VK_SLASH,      0,      ".",      ",",      WCH_NONE, WCH_NONE
@@ -753,6 +753,7 @@ deadkeys:
     du "ec¢", 0
     du "ey¥", 0
     du "ee€", 0
+    du "$e€", 0
     du "ur₽", 0
     du "ifﬁ", 0
     du "ffﬀ", 0
@@ -820,10 +821,18 @@ deadkeys:
 
     du "fb█", 0, "Fb▓", 0, "FB▓", 0
     du "gb░", 0, "Gb▒", 0, "GB▒", 0
-    du "hb▀", 0, "Hb▌", 0, "HB▌", 0
+    du "db▀", 0, "Db▌", 0, "DB▌", 0
     du "jb▄", 0, "Jb▐", 0, "JB▐", 0
-    du "vb↓", 0
 	du "*b✱", 0
+
+    du "vb│", 0, "hb─", 0, "Vb┴", 0, "Hb┬", 0
+    du "lb┘", 0, "rb└", 0, "Lb┤", 0, "Rb├", 0
+    du "vB║", 0, "hB═", 0, "VB╩", 0, "HB╦", 0
+    du "lB╝", 0, "rB╚", 0, "LB╣", 0, "RB╠", 0
+    du "xb┼", 0, "xB╬", 0
+
+    du "<a←", 0, ">a→", 0
+    du "-a↓", 0, "+a↑", 0
 
     du "cb", 20BFh, 0 ; Bitcoin sign
 
