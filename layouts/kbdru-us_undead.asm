@@ -714,6 +714,7 @@ deadkeys:
     du "уу€", 0
     du "$у€", 0
     du "гк₽", 0
+    du "$к₽", 0
     du "шаﬁ", 0
     du "ааﬀ", 0
     du "даﬂ", 0
@@ -772,7 +773,9 @@ deadkeys:
     du "/й̸", 0 ; combining solidus
     du "\й̸", 0 ; combining solidus
     du "*й⃰", 0 ; combining asterix
-    du "*й⃰", 0 ; combining asterix
+    du "xйͯ", 0 ; combining X
+    du "чйͯ", 0 ; combining X (RU layout)
+    du "_й͇", 0 ; combining double-underscore
 
     du "2а½", 0
     du "3а⅓", 0

@@ -732,6 +732,7 @@ deadkeys:
     du "ee€", 0
     du "$e€", 0
     du "ur₽", 0
+    du "$r₽", 0
     du "ifﬁ", 0
     du "ffﬀ", 0
     du "lfﬂ", 0
@@ -790,7 +791,9 @@ deadkeys:
     du "/q̸", 0 ; combining solidus
     du "\q̸", 0 ; combining solidus
     du "*q⃰", 0 ; combining asterix
-    du "*q⃰", 0 ; combining asterix
+    du "xqͯ", 0 ; combining X
+    du "чqͯ", 0 ; combining X (RU layout)
+    du "_q͇", 0 ; combining double-underscore
 
     du "2f½", 0
     du "3f⅓", 0
