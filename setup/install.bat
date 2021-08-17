@@ -4,12 +4,12 @@ set target=%1
 set dest=%~nx1
 
 if "%target%"=="" (
-  set target=..\layouts\kbdusru_undead.dll
-  set dest=kbdusru_undead.dll
+  set target=..\layouts\kbdusru.dll
+  set dest=kbdusru.dll
   set lid=00d0
   set id=07430419
   set shortname="US+RU"
-  set longname="United States-International + Russian + Extra"
+  set longname="United States-International + Russian"
 ) else (
   set id=07430409
   if not "%2"=="" set id=%2

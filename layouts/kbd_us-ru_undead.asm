@@ -1,6 +1,6 @@
 ﻿="utf8"
 ; kbdasm by Grom PE. Public domain.
-; kbdus-ru_undead - US/RU hybrid keyboard layout with Caps Lock set to switch
+; kbd_us-ru_undead - US/RU hybrid keyboard layout with Caps Lock set to switch
 ;                  languages and "undead keys" for additional symbols
 
 include "includes/detect_%arch%.inc"
@@ -14,7 +14,7 @@ end if
 TYPEWRITER = 1 ; Set to 1 to swap 1234567890 and !@#$%^&*() when CapsLock is OFF
 TYPEWRITER_ON_CAPS = 0 ; Set to 1 to swap 1234567890 and !@#$%^&*() when CapsLock is ON
 PROGRAMMER = 1 ; Swap "[","]" with "{","}"
-UDERSCORE_PRIORITY = 1 ; Swap "-" with "_"
+UNDERSCORE_PRIORITY = 1 ; Swap "-" with "_"
 
 MAKE_DLL equ 1
 
@@ -326,7 +326,7 @@ if TYPEWRITER_ON_CAPS
 else
     vkrow4 "0",           0,      "0",      ")",      WCH_NONE, WCH_NONE
 end if
-if UDERSCORE_PRIORITY
+if UNDERSCORE_PRIORITY
     vkrow4 VK_MINUS,      SGCAPS, "_",      "-",      "–",      "—"
 else
     vkrow4 VK_MINUS,      SGCAPS, "-",      "_",      "–",      "—"
@@ -852,7 +852,7 @@ deadkeys:
 palign
 
 data export
-export "kbdus-ru_undead.dll", KbdLayerDescriptor, "KbdLayerDescriptor"
+export "kbd_us-ru_undead.dll", KbdLayerDescriptor, "KbdLayerDescriptor"
 end data
 
 palign
@@ -878,9 +878,9 @@ versioninfo version,VOS_NT_WINDOWS32,VFT_DLL,VFT2_DRV_KEYBOARD,0,1200,\
     'CompanyName','by Grom PE. Adopted by sir_Andros',\
     'FileDescription','US+RU Customized Keyboard Layout',\
     'FileVersion','1.0',\
-    'InternalName','kbdus-ru_undead',\
+    'InternalName','kbd_us-ru_undead',\
     'LegalCopyright','Public domain. No rights reserved.',\
-    'OriginalFilename','kbdus-ru_undead.dll',\
+    'OriginalFilename','kbd_us-ru_undead.dll',\
     'ProductName','kbdasm',\
     'ProductVersion','1.0'
 

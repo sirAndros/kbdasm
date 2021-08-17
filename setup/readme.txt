@@ -12,7 +12,7 @@ Customize your keyboard layout to:
 - combine several alphabets in a single layout, switchable with Caps Lock or Kana key or both;
 
 
-How to use kbdusru_undead keyboard layout
+How to use "kbdusru" keyboard layout
 =========================================
 1. >make.bat
 2. >install.bat

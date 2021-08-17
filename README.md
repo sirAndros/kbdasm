@@ -40,6 +40,8 @@ Notes
 -----
 
 I use "typewriter"-like (digits and symbols are swapped) layouts when CapsLock is OFF but prefer to have digits on alternative (caps) layout.
-You can easily change both with `TYPEWRITER` and `TYPEWRITER_ON_CAPS` flags in [kbdruen_undead.asm](https://github.com/sirAndros/kbdasm/blob/master/layouts/kbdruen_undead.asm) and [kbdusru_undead.asm](https://github.com/sirAndros/kbdasm/blob/master/layouts/kbdusru_undead.asm).
+You can easily change both with `TYPEWRITER` and `TYPEWRITER_ON_CAPS` flags in [kbd_ru-us_undead.asm](https://github.com/sirAndros/kbdasm/blob/master/layouts/kbd_ru-us_undead.asm) and [kbd_us-ru_undead.asm](https://github.com/sirAndros/kbdasm/blob/master/layouts/kbd_us-ru_undead.asm).
 
-To determine what you use offen I recomend to use some keylogger for a week. For my-self I wrote own very basic bycicle: [simple-keypress-statistics](https://github.com/sirAndros/simple-keypress-statistics).
+Also I swapped `{`,`}` and `[`,`]` as well as `_` and `-` for english layout. This settings are controlled by `PROGRAMMER` and `UNDERSCORE_PRIORITY` correspondingly.
+
+To determine what you use often I recommend to use some keylogger for a week. For my-self I wrote own very basic bicycle: [simple-keypress-statistics](https://github.com/sirAndros/simple-keypress-statistics).

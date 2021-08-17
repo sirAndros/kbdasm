@@ -9,7 +9,7 @@ goto:eof
 :make
 "%~pd0fasm\fasm.exe" layouts\kbdusru.asm
 "%~pd0fasm\fasm.exe" layouts\workman.asm
-"%~pd0fasm\fasm.exe" layouts\kbdru-us_undead.asm
-"%~pd0fasm\fasm.exe" layouts\kbdus-ru_undead.asm
+"%~pd0fasm\fasm.exe" layouts\kbd_ru-us_undead.asm
+"%~pd0fasm\fasm.exe" layouts\kbd_us-ru_undead.asm
 "%~pd0fasm\fasm.exe" setup\reg_layout.asm
 goto:eof

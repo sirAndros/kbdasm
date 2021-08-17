@@ -3,7 +3,7 @@ setlocal enabledelayedexpansion
 if not "%cd%"\=="%~pd0" cd /d "%~pd0"
 set target=%1
 if not "%target%"=="" goto:skipdefault
-set target=kbdusru_undead.dll
+set target=kbdusru.dll
 :skipdefault
 if not exist %target% goto:notexist
 set d=################################
