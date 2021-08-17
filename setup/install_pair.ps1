@@ -19,11 +19,15 @@ function Register-Layout ([string]$name, [string]$id, [string]$text, [string]$fi
     if (Test-LayoutId $id) {
         throw "Layout with ID $id already exists!"
     } else {
-        New-Item -Path $regpath -Name $name
-        New-ItemProperty -Path "$regpath\$name" -Name "Layout Id"   -Value $id
-        New-ItemProperty -Path "$regpath\$name" -Name "Layout Text" -Value $text
-        New-ItemProperty -Path "$regpath\$name" -Name "Layout File" -Value $file
-        New-ItemProperty -Path "$regpath\$name" -Name "Layout Display Name" -Value $dispName
+        New-Item -Path $regpath -Name $name |
+            New-ItemProperty -Name "Layout Id"   -Value $id   |
+            New-ItemProperty -Name "Layout Text" -Value $text |
+            New-ItemProperty -Name "Layout File" -Value $file |
+            New-ItemProperty -Name "Layout Display Name" -Value $dispName |
+            Get-Item
+        if ($?) {
+            Write-Verbose "Layout `"$name`"($text) has been registered."
+        }
     }
 }
 
