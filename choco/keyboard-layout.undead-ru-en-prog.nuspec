@@ -17,7 +17,7 @@ E.g. to write "ě" press `AltGr`+`e`, then `v`. See more combinations in sources
     <tags>keyboard typewriter extraKeys AltGr DeadKeys</tags>
     <copyright>© Grom PE</copyright>
     <licenseUrl>https://github.com/sirAndros/kbdasm/blob/master/choco/tools/LICENSE.txt</licenseUrl>
-    <iconUrl>https://cdn.statically.io/gh/sirAndros/kbdasm/v1.0/choco/icon.jpg</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/sirAndros/kbdasm/logo/choco/logo.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <releaseNotes>$ReleaseNotes$</releaseNotes>
   </metadata>
