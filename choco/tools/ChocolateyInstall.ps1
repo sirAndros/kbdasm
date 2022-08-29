@@ -47,3 +47,5 @@ if (Test-Path "$regpath\$idEng") {
 
 Copy-Item "$srcPath\$dllRus" C:\Windows\System32\ -Force
 Copy-Item "$srcPath\$dllEng" C:\Windows\System32\ -Force
+
+Write-Host "Keyboard layouts have been installed. Don't forget to change your windows keyboard settings: Language > Options > Add a keyboard > US+RU/RU+US"
