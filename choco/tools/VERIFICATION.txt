@@ -1,0 +1,24 @@
+VERIFICATION
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+ 
+The origin of the embedded plugin can be downloaded from releases
+on https://github.com/sirAndros/kbdasm/releases/
+and than can be verified by doing the following:
+
+1. Fetch .dll asset of the corresponding version from
+   https://github.com/sirAndros/kbdasm/releases/
+
+2. Compute checksum using one of the following methods:
+   - Call powershell function 'Get-FileHash'
+   - Use chocolatey utility 'checksum'
+
+3. The checksum must match the following:
+
+   checksum type: SHA256
+   kbd_ru-us_undead.dll: 6a320418390add54027d111730d8b87809269b8a911a693b77ad769ca760fb44
+   kbd_us-ru_undead.dll: 752df617d6e7231716648789ee94e7916bd6a9e59a5ef2ae9ac306ea3aed1049
+
+Likewise, the binaries installed from this package is identical and so must
+match the checksum either. You can just install the package and than verify
+.dll files in "C:\Windows\System32\" folder.
