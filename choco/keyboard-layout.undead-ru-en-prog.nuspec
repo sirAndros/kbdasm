@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <metadata>
-    <id>keyboard-layout.undead-ru-en-prog</id>
+    <id>keyboard-layout-undead-ru-en-prog</id>
     <title>"Undead" RU+EN programmer keyboard layout</title>
     <version>$Version$</version>
     <authors>Grom PE, mod by sirAndros</authors>
     <owners>sirAndros</owners>
     <summary>RUS+ENG typewriter/programmer keyboard layouts with CapsLock switch and extra keys by AltGr</summary>
     <description>
-RUS+ENG typewriter (i.e. numbers and symbols in upper row are swapped, `{`,`}` and `[`,`]` as well as `_` and `-` for english layout are swapped also) keyboard layouts with CapsLock switch and extra keys by AltGr with reverse dead key approach.
+RUS+ENG typewriter (i.e. numbers and symbols in upper row are swapped as well as `{`,`}` and `[`,`]`) keyboard layouts with CapsLock switch and extra keys by AltGr with reverse dead key approach.
 E.g. to write "ě" press `AltGr`+`e`, then `v`. See more combinations in sources on the GitHub.
     </description>
     <packageSourceUrl>https://github.com/sirAndros/kbdasm/tree/master/choco</packageSourceUrl>
