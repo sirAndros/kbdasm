@@ -1,4 +1,4 @@
-="utf8"
+﻿="utf8"
 ; kbdasm by Grom PE. Public domain.
 ; kbd_ru-us_undead - RU/US hybrid keyboard layout with Caps Lock set to switch
 ;                  languages and "undead keys" for additional symbols
@@ -12,14 +12,14 @@ else
 end if
 
 TYPEWRITER = 1 ; Set to 1 to swap 1234567890 and !@#$%^&*() when CapsLock is OFF
-TYPEWRITER_ON_CAPS = 0 ; Set to 1 to swap 1234567890 and !@#$%^&*() when CapsLock is ON
+TYPEWRITER_ON_CAPS = 1 ; Set to 1 to swap 1234567890 and !@#$%^&*() when CapsLock is ON
 
 MAKE_DLL equ 1
 
 include "includes/base.inc"
 
 WOW64 = 0 ; Use when assembling for 32-bit subsystem for 64-bit OS (Is this ever needed?)
-USE_LIGATURES = 1 ; There is a bug in Firefox, if ligatures contain more than
+USE_LIGATURES = 0 ; There is a bug in Firefox, if ligatures contain more than
                   ; 4 characters, it won't start up if that layout is default;
                   ; if the layout is switched to, Firefox then hangs.
                   ; See also:
