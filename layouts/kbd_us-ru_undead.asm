@@ -1,4 +1,4 @@
-﻿="utf8"
+="utf8"
 ; kbdasm by Grom PE. Public domain.
 ; kbd_us-ru_undead - US/RU hybrid keyboard layout with Caps Lock set to switch
 ;                  languages and "undead keys" for additional symbols
@@ -613,24 +613,35 @@ deadkeys:
     du "^ZẐ", 0, "^zẑ", 0
     du "vAǍ", 0, "vaǎ", 0
     du "vCČ", 0, "vcč", 0
+    du "VCČ", 0, "Vcč", 0
     du "vDĎ", 0, "vdď", 0
+    du "VDĎ", 0, "Vdď", 0
     du "vEĚ", 0, "veě", 0
+    du "VEĚ", 0, "Veě", 0
     du "vGǦ", 0, "vgǧ", 0
     du "vHȞ", 0, "vhȟ", 0
     du "vIǏ", 0, "viǐ", 0
     du "vKǨ", 0, "vkǩ", 0
     du "vLĽ", 0, "vlľ", 0
     du "vNŇ", 0, "vnň", 0
+    du "VNŇ", 0, "Vnň", 0
     du "vOǑ", 0, "voǒ", 0
     du "vRŘ", 0, "vrř", 0
+    du "VRŘ", 0, "Vrř", 0
     du "vSŠ", 0, "vsš", 0
+    du "VSŠ", 0, "Vsš", 0
     du "vTŤ", 0, "vtť", 0
+    du "VTŤ", 0, "Vtť", 0
     du "vUǓ", 0, "vuǔ", 0
     du "vZŽ", 0, "vzž", 0
+    du "VZŽ", 0, "Vzž", 0
     du "мAǍ", 0, "мaǎ", 0
     du "мCČ", 0, "мcč", 0
+    du "МCČ", 0, "Мcč", 0
     du "мDĎ", 0, "мdď", 0
+    du "МDĎ", 0, "Мdď", 0
     du "мEĚ", 0, "мeě", 0
+    du "МEĚ", 0, "Мeě", 0
     du "мGǦ", 0, "мgǧ", 0
     du "мHȞ", 0, "мhȟ", 0
     du "мIǏ", 0, "мiǐ", 0
@@ -639,10 +650,14 @@ deadkeys:
     du "мNŇ", 0, "мnň", 0
     du "мOǑ", 0, "мoǒ", 0
     du "мRŘ", 0, "мrř", 0
+    du "МRŘ", 0, "Мrř", 0
     du "мSŠ", 0, "мsš", 0
+    du "МSŠ", 0, "Мsš", 0
     du "мTŤ", 0, "мtť", 0
+    du "МTŤ", 0, "Мtť", 0
     du "мUǓ", 0, "мuǔ", 0
     du "мZŽ", 0, "мzž", 0
+    du "МZŽ", 0, "Мzž", 0
     du "uAĂ", 0, "uaă", 0
     du "uEĔ", 0, "ueĕ", 0
     du "uGĞ", 0, "ugğ", 0
