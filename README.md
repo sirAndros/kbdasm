@@ -44,4 +44,6 @@ You can easily change both with `TYPEWRITER` and `TYPEWRITER_ON_CAPS` flags in [
 
 Also I swapped `{`,`}` and `[`,`]` as well as `_` and `-` for english layout. This settings are controlled by `PROGRAMMER` and `UNDERSCORE_PRIORITY` correspondingly.
 
+**UPD:** After a year, I decided that for me pressing `SHIFT`+`-` is easier in case of naming fields when I'm programming, than passing parameters to scripts in shell, so I've turned the `UNDERSCORE_PRIORITY` off. Also, looks like mine muscle memory is stronger then pinky load, so it's turns out that having  `TYPEWRITER_ON_CAPS` enabled along `TYPEWRITER` setting is less confusing. But I still like having `{`,`}` and `[`,`]` swapped.
+
 To determine what you use often I recommend to use some keylogger for a week. For my-self I wrote own very basic bicycle: [simple-keypress-statistics](https://github.com/sirAndros/simple-keypress-statistics).
