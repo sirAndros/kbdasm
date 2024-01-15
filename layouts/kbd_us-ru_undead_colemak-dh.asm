@@ -819,7 +819,7 @@ if TYPEWRITER
     du "&f⅐", 0
     du "*f⅛", 0
     du "(f⅑", 0
-    du ")⅒", 0
+    du ")f⅒", 0
 else
     du "2f½", 0
     du "3f⅓", 0
@@ -830,6 +830,30 @@ else
     du "8f⅛", 0
     du "9f⅑", 0
     du "0f⅒", 0
+end if
+
+if TYPEWRITER
+    du "!sⅠ", 0
+    du "@sⅡ", 0
+    du "#sⅢ", 0
+    du "$sⅣ", 0
+    du "%sⅤ", 0
+    du "^sⅥ", 0
+    du "&sⅦ", 0
+    du "*sⅧ", 0
+    du "(sⅨ", 0
+    du ")sⅩ", 0
+else
+    du "1sⅠ", 0
+    du "2sⅡ", 0
+    du "3sⅢ", 0
+    du "4sⅣ", 0
+    du "5sⅤ", 0
+    du "6sⅥ", 0
+    du "7sⅦ", 0
+    du "8sⅧ", 0
+    du "9sⅨ", 0
+    du "0sⅩ", 0
 end if
 
     du "fb█", 0, "Fb▓", 0, "FB▓", 0
@@ -846,6 +870,11 @@ end if
 
     du "<a←", 0, ">a→", 0
     du "-a↓", 0, "+a↑", 0
+    du "ra↻", 0, "ia⇒", 0
+
+    du "kh∀", 0, "eh∃", 0
+    du "eh∄", 0, "oh∅", 0
+    du "<h∠", 0, "vh∨", 0
 
     ; du "AAA", 0, "aaa", 0, "ФAA", 0, "фaa", 0
     ; du "BBB", 0, "bbb", 0, "ИBB", 0, "иbb", 0

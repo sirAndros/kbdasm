@@ -832,6 +832,31 @@ else
     du "0f⅒", 0
 end if
 
+if TYPEWRITER
+    du "!rⅠ", 0
+    du "@rⅡ", 0
+    du "#rⅢ", 0
+    du "$rⅣ", 0
+    du "%rⅤ", 0
+    du "^rⅥ", 0
+    du "&rⅦ", 0
+    du "*rⅧ", 0
+    du "(rⅨ", 0
+    du ")rⅩ", 0
+else
+    du "1rⅠ", 0
+    du "2rⅡ", 0
+    du "3rⅢ", 0
+    du "4rⅣ", 0
+    du "5rⅤ", 0
+    du "6rⅥ", 0
+    du "7rⅦ", 0
+    du "8rⅧ", 0
+    du "9rⅨ", 0
+    du "0rⅩ", 0
+end if
+
+
     du "fb█", 0, "Fb▓", 0, "FB▓", 0
     du "gb░", 0, "Gb▒", 0, "GB▒", 0
     du "db▀", 0, "Db▌", 0, "DB▌", 0
@@ -846,6 +871,11 @@ end if
 
     du "<a←", 0, ">a→", 0
     du "-a↓", 0, "+a↑", 0
+    du "ra↻", 0, "ia⇒", 0
+
+    du "km∀", 0, "em∃", 0
+    du "nm∄", 0, "om∅", 0
+    du "<m∠", 0, "vm∨", 0
 
     ; du "AAA", 0, "aaa", 0, "ФAA", 0, "фaa", 0
     ; du "BBB", 0, "bbb", 0, "ИBB", 0, "иbb", 0
