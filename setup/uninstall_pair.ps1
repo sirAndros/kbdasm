@@ -1,29 +1,36 @@
 #Requires -RunAsAdministrator
 
-$idRus = "07430419"
-$idEng = "07430409"
+@(
+    @{
+        Id = "07430419"
+        Name = "RU+US"
+        Dll = "kbd_ru-us_undead.dll"
+    }
+    @{
+        Id = "07430409"
+        Name = "US+RU"
+        Dll = "kbd_us-ru_undead.dll"
+    }
+    @{
+        Id = "07440409"
+        Name = "Colemak+RU"
+        Dll = "kbd_us-ru_undead_colemak-dh.dll"
+    }
+) | ForEach-Object {
 
-$dllRus = "kbd_ru-us_undead.dll"
-$dllEng = "kbd_us-ru_undead.dll"
+    $regPath = "HKLM:\SYSTEM\CurrentControlSet\Control\Keyboard Layouts"
+    $targetPath = "C:\Windows\System32"
 
-$regPath = "HKLM:\SYSTEM\CurrentControlSet\Control\Keyboard Layouts"
-$targetPath = "C:\Windows\System32"
+    $id = $_.Id
+    $dll = $_.Dll
 
-if (Test-Path "$regpath\$idRus") {
-    Remove-Item "$regpath\$idRus" -Force
-} else {
-    Write-Verbose "'$regpath\$idRus' does not exists"
-}
+    if (Test-Path "$regpath\$id") {
+        Remove-Item "$regpath\$id" -Force
+    } else {
+        Write-Verbose "'$regpath\$id' does not exists"
+    }
 
-if (Test-Path "$regpath\$idEng") {
-    Remove-Item "$regpath\$idEng" -Force
-} else {
-    Write-Verbose "'$regpath\$idEng' does not exists"
-}
-
-if (Test-Path "$targetPath\$dllRus") {
-    Remove-Item "$targetPath\$dllRus" -Force
-}
-if (Test-Path "$targetPath\$dllEng") {
-    Remove-Item "$targetPath\$dllEng" -Force
+    if (Test-Path "$targetPath\$dll") {
+        Remove-Item "$targetPath\$dll" -Force
+    }
 }

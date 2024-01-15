@@ -2,9 +2,11 @@
 
 $idRus = "07430419"
 $idEng = "07430409"
+$idClmk = "07440409"
 
 $dllRus = "kbd_ru-us_undead.dll"
 $dllEng = "kbd_us-ru_undead.dll"
+$dllClmk = "kbd_us-ru_undead_colemak-dh.dll"
 
 $regPath = "HKLM:\SYSTEM\CurrentControlSet\Control\Keyboard Layouts"
 $srcPath = "$PSScriptRoot\..\layouts"
@@ -34,26 +36,25 @@ function Register-Layout ([string]$name, [string]$id, [string]$text, [string]$fi
 function Test-Dll([string] $path) {
     & "$PSScriptRoot\checkdll.bat" $path
     if (!$?) {
-        throw "Keyboard layout binaries is invalid"
+        throw "Keyboard layout binaries is invalid: $path"
     }
+}
+
+function Install-Layout([string]$systemId, [string]$id, [string]$text, [string]$file, [string]$dispName) {
+    $physicalPath = Join-Path $srcPath $file
+    Test-Dll $physicalPath
+
+    if (Test-Path "$regpath\$systemId") {
+        Write-Verbose "Russian keyboard layout is already registered"
+    } else {
+        Register-Layout $systemId -id $id -text $text -file $file -dispName $dispName
+    }
+
+    Copy-Item $physicalPath C:\Windows\System32\ -Force
 }
 
 ####
 
-Test-Dll "$srcPath\$dllRus"
-Test-Dll "$srcPath\$dllEng"
-
-if (Test-Path "$regpath\$idRus") {
-    Write-Verbose "Russian keyboard layout is already registered"
-} else {
-    Register-Layout $idRus -id "00d0" -text "RU+US" -file $dllRus -dispName "RU+US Extended"
-}
-
-if (Test-Path "$regpath\$idEng") {
-    Write-Verbose "English keyboard layout is already registered"
-} else {
-    Register-Layout $idEng -id "00d1" -text "US+RU" -file $dllEng -dispName "US+RU Extended"
-}
-
-Copy-Item "$srcPath\$dllRus" C:\Windows\System32\ -Force
-Copy-Item "$srcPath\$dllEng" C:\Windows\System32\ -Force
+Install-Layout $idRus -id "00d0" -text "RU+US" -file $dllRus -dispName "RU+US Extended"
+Install-Layout $idEng -id "00d1" -text "US+RU" -file $dllEng -dispName "US+RU Extended"
+Install-Layout $idClmk -id "00d2" -text "Colmak+RU" -file $dllClmk -dispName "Colemak-DH+RU Extended"
