@@ -1,4 +1,4 @@
-﻿="utf8"
+="utf8"
 ; kbdasm by Grom PE. Public domain.
 ; kbd_us-ru_undead_colemak-dh - US Colemak-DH/RU hybrid keyboard layout with Caps Lock set to switch
 ;                  languages and "undead keys" for additional symbols
@@ -810,6 +810,17 @@ deadkeys:
     du "чqͯ", 0 ; combining X (RU layout)
     du "_q͇", 0 ; combining double-underscore
 
+if TYPEWRITER
+    du "@f½", 0
+    du "#f⅓", 0
+    du "$f¼", 0
+    du "%f⅕", 0
+    du "^f⅙", 0
+    du "&f⅐", 0
+    du "*f⅛", 0
+    du "(f⅑", 0
+    du ")⅒", 0
+else
     du "2f½", 0
     du "3f⅓", 0
     du "4f¼", 0
@@ -819,6 +830,7 @@ deadkeys:
     du "8f⅛", 0
     du "9f⅑", 0
     du "0f⅒", 0
+end if
 
     du "fb█", 0, "Fb▓", 0, "FB▓", 0
     du "gb░", 0, "Gb▒", 0, "GB▒", 0
