@@ -110,7 +110,7 @@ keynamesDead:
     dp "ˇCARON"
     dp "°RING"
     dp "¸CEDILLA"
-    dp "¯MACRON" 
+    dp "¯MACRON"
     dp 0
 
 palign
@@ -819,7 +819,7 @@ if TYPEWRITER
     du "&f⅐", 0
     du "*f⅛", 0
     du "(f⅑", 0
-    du ")⅒", 0
+    du ")f⅒", 0
 else
     du "2f½", 0
     du "3f⅓", 0
@@ -855,7 +855,6 @@ else
     du "9rⅨ", 0
     du "0rⅩ", 0
 end if
-
 
     du "fb█", 0, "Fb▓", 0, "FB▓", 0
     du "gb░", 0, "Gb▒", 0, "GB▒", 0

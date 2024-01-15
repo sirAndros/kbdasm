@@ -1,4 +1,4 @@
-="utf8"
+﻿="utf8"
 ; kbdasm by Grom PE. Public domain.
 ; kbd_us-ru_undead_colemak-dh - US Colemak-DH/RU hybrid keyboard layout with Caps Lock set to switch
 ;                  languages and "undead keys" for additional symbols
@@ -413,7 +413,7 @@ else
     vkrow5 VK_RBRACKET,  SGCAPS, "]", "}", "]",      "}",      01Dh
 end if
     vkrow5 VK_RBRACKET,  0,      "ъ", "Ъ", WCH_NONE, WCH_NONE, WCH_NONE
- 
+
     vkrow5 VK_BACKSLASH, SGCAPS, "\", "|", "|",      "¬",      01Ch
     vkrow5 VK_BACKSLASH, 0,      "\", "/", WCH_NONE, WCH_NONE, WCH_NONE
     vkrow5 VK_OEM_102,   0,      "\", "|", WCH_NONE, WCH_NONE, 01Ch
