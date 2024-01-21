@@ -28,7 +28,7 @@ Installation
 If somebody wants to check out my approach - there are PowerShell scripts to setup layouts.
 
 1. Run `.\make.bat`
-2. Run `.\setup\install-pair.ps1`
+2. Run `.\setup\install.ps1`
 3. Run `.\utils\open_control_input.bat`
 4. Add "EN+RU" to English language. _(In opened window in "Preferred languages" select "English"->Options->Add a keyboard")_
 5. Remove previously used keyboard.
@@ -45,5 +45,7 @@ You can easily change both with `TYPEWRITER` and `TYPEWRITER_ON_CAPS` flags in [
 Also I swapped `{`,`}` and `[`,`]` as well as `_` and `-` for english layout. This settings are controlled by `PROGRAMMER` and `UNDERSCORE_PRIORITY` correspondingly.
 
 **UPD:** After a year, I decided that for me pressing `SHIFT`+`-` is easier in case of naming fields when I'm programming, than passing parameters to scripts in shell, so I've turned the `UNDERSCORE_PRIORITY` off. Also, looks like mine muscle memory is stronger then pinky load, so it's turns out that having  `TYPEWRITER_ON_CAPS` enabled along `TYPEWRITER` setting is less confusing. But I still like having `{`,`}` and `[`,`]` swapped.
+
+Also, I moved to ortholinear keyboard and colmak-dh, so you can find version for this layout also in the repo.
 
 To determine what you use often I recommend to use some keylogger for a week. For my-self I wrote own very basic bicycle: [simple-keypress-statistics](https://github.com/sirAndros/simple-keypress-statistics).

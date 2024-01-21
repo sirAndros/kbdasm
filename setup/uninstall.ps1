@@ -16,6 +16,11 @@
         Name = "Colemak+RU"
         Dll = "kbd_us-ru_undead_colemak-dh.dll"
     }
+    @{
+        Id = "07440419"
+        Name = "RU+Colemak"
+        Dll = "kbd_ru-us_undead_colemak-dh.dll"
+    }
 ) | ForEach-Object {
 
     $regPath = "HKLM:\SYSTEM\CurrentControlSet\Control\Keyboard Layouts"
