@@ -1,4 +1,4 @@
-﻿="utf8"
+="utf8"
 ; kbdasm by Grom PE. Public domain.
 ; kbd_us-ru_undead_colemak-dh - US Colemak-DH/RU hybrid keyboard layout with Caps Lock set to switch
 ;                  languages and "undead keys" for additional symbols
@@ -262,9 +262,9 @@ else
     vkrow4 "4",           SGCAPS, "4",      "$",      "$",      "£"
 end if
 if TYPEWRITER_ON_CAPS
-    vkrow4 "4",           0,      ";",      "4",      WCH_NONE, WCH_NONE
+    vkrow4 "4",           0,      ";",      "4",      WCH_NONE, "₽"
 else
-    vkrow4 "4",           0,      "4",      ";",      WCH_NONE, WCH_NONE
+    vkrow4 "4",           0,      "4",      ";",      WCH_NONE, "₽"
 end if
 if TYPEWRITER
     vkrow4 "5",           SGCAPS, "%",      "5",      "€",      "‰"

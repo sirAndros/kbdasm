@@ -262,9 +262,9 @@ else
     vkrow4 "4",           SGCAPS, "4",      "$",      "$",      "£"
 end if
 if TYPEWRITER_ON_CAPS
-    vkrow4 "4",           0,      ";",      "4",      WCH_NONE, WCH_NONE
+    vkrow4 "4",           0,      ";",      "4",      WCH_NONE, "₽"
 else
-    vkrow4 "4",           0,      "4",      ";",      WCH_NONE, WCH_NONE
+    vkrow4 "4",           0,      "4",      ";",      WCH_NONE, "₽"
 end if
 if TYPEWRITER
     vkrow4 "5",           SGCAPS, "%",      "5",      "€",      "‰"
