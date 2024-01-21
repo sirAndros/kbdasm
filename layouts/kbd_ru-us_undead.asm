@@ -803,7 +803,8 @@ if TYPEWRITER
     du "*а⅛", 0
     du "(а⅑", 0
     du ")а⅒", 0
-else
+end if
+
     du "2а½", 0
     du "3а⅓", 0
     du "4а¼", 0
@@ -813,7 +814,7 @@ else
     du "8а⅛", 0
     du "9а⅑", 0
     du "0а⅒", 0
-end if
+
 
 if TYPEWRITER
     du "!кⅠ", 0
@@ -826,7 +827,8 @@ if TYPEWRITER
     du "*кⅧ", 0
     du "(кⅨ", 0
     du ")кⅩ", 0
-else
+end if
+
     du "1кⅠ", 0
     du "2кⅡ", 0
     du "3кⅢ", 0
@@ -837,7 +839,7 @@ else
     du "8кⅧ", 0
     du "9кⅨ", 0
     du "0кⅩ", 0
-end if
+
 
     du "аи█", 0, "Аи▓", 0, "АИ▓", 0
     du "пи░", 0, "Пи▒", 0, "ПИ▒", 0

@@ -1,4 +1,4 @@
-="utf8"
+﻿="utf8"
 ; kbdasm by Grom PE. Public domain.
 ; kbd_us-ru_undead_colemak-dh - US Colemak-DH/RU hybrid keyboard layout with Caps Lock set to switch
 ;                  languages and "undead keys" for additional symbols
@@ -810,6 +810,17 @@ deadkeys:
     du "чqͯ", 0 ; combining X (RU layout)
     du "_q͇", 0 ; combining double-underscore
 
+; Fractions
+    du "2f½", 0
+    du "3f⅓", 0
+    du "4f¼", 0
+    du "5f⅕", 0
+    du "6f⅙", 0
+    du "7f⅐", 0
+    du "8f⅛", 0
+    du "9f⅑", 0
+    du "0f⅒", 0
+
 if TYPEWRITER
     du "@f½", 0
     du "#f⅓", 0
@@ -820,17 +831,19 @@ if TYPEWRITER
     du "*f⅛", 0
     du "(f⅑", 0
     du ")f⅒", 0
-else
-    du "2f½", 0
-    du "3f⅓", 0
-    du "4f¼", 0
-    du "5f⅕", 0
-    du "6f⅙", 0
-    du "7f⅐", 0
-    du "8f⅛", 0
-    du "9f⅑", 0
-    du "0f⅒", 0
 end if
+
+; Roman numbers
+    du "1sⅠ", 0
+    du "2sⅡ", 0
+    du "3sⅢ", 0
+    du "4sⅣ", 0
+    du "5sⅤ", 0
+    du "6sⅥ", 0
+    du "7sⅦ", 0
+    du "8sⅧ", 0
+    du "9sⅨ", 0
+    du "0sⅩ", 0
 
 if TYPEWRITER
     du "!sⅠ", 0
@@ -843,17 +856,6 @@ if TYPEWRITER
     du "*sⅧ", 0
     du "(sⅨ", 0
     du ")sⅩ", 0
-else
-    du "1sⅠ", 0
-    du "2sⅡ", 0
-    du "3sⅢ", 0
-    du "4sⅣ", 0
-    du "5sⅤ", 0
-    du "6sⅥ", 0
-    du "7sⅦ", 0
-    du "8sⅧ", 0
-    du "9sⅨ", 0
-    du "0sⅩ", 0
 end if
 
     du "fb█", 0, "Fb▓", 0, "FB▓", 0

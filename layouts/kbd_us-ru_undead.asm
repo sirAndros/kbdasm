@@ -820,7 +820,7 @@ if TYPEWRITER
     du "*f⅛", 0
     du "(f⅑", 0
     du ")f⅒", 0
-else
+end if
     du "2f½", 0
     du "3f⅓", 0
     du "4f¼", 0
@@ -830,7 +830,7 @@ else
     du "8f⅛", 0
     du "9f⅑", 0
     du "0f⅒", 0
-end if
+
 
 if TYPEWRITER
     du "!rⅠ", 0
@@ -843,7 +843,7 @@ if TYPEWRITER
     du "*rⅧ", 0
     du "(rⅨ", 0
     du ")rⅩ", 0
-else
+end if
     du "1rⅠ", 0
     du "2rⅡ", 0
     du "3rⅢ", 0
@@ -854,7 +854,7 @@ else
     du "8rⅧ", 0
     du "9rⅨ", 0
     du "0rⅩ", 0
-end if
+
 
     du "fb█", 0, "Fb▓", 0, "FB▓", 0
     du "gb░", 0, "Gb▒", 0, "GB▒", 0
