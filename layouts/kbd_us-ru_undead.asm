@@ -830,7 +830,7 @@ end if
     du "8f⅛", 0
     du "9f⅑", 0
     du "0f⅒", 0
-
+du "qf¾", 0
 
 if TYPEWRITER
     du "!rⅠ", 0

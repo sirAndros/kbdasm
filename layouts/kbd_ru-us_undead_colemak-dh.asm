@@ -814,6 +814,7 @@ end if
     du "8а⅛", 0
     du "9а⅑", 0
     du "0а⅒", 0
+du "ай¾", 0
 
 
 if TYPEWRITER

@@ -832,6 +832,7 @@ if TYPEWRITER
     du "(f⅑", 0
     du ")f⅒", 0
 end if
+du "qf¾", 0
 
 ; Roman numbers
     du "1sⅠ", 0
